@@ -26,11 +26,11 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-CHANNEL_ID = 1356176312556847159
+CHANNEL_ID = 1328854763000823851
 
 member1 = "<@1063175341608275988>"  # Logan
-member2 = "Lane" # Lane
-member3 = "Caleb" # Caleb
+member2 = "<@446875072381059073>" # Lane
+member3 = "<@163724371263750144>" # Caleb
 
 rotation = [member2, member3, member1]
 reminder_enabled = True
