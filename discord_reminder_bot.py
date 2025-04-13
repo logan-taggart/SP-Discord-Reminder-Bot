@@ -44,7 +44,7 @@ async def on_ready():
 @tasks.loop(minutes=1)
 async def reminder():
     now = datetime.now()
-    if now.weekday() == 4 and now.hour == 10 and now.minute == 0 and reminder_enabled:
+    if now.weekday() == 4 and now.hour == 17 and now.minute == 0 and reminder_enabled:
         channel = bot.get_channel(CHANNEL_ID)
         if channel:
             await channel.send("@everyone Don’t forget status reports today")
